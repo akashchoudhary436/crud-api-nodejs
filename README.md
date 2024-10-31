@@ -8,16 +8,16 @@ This documentation provides details about the Nudge API, which allows users to c
 
 ```json
 {
-  "id": "string",                // Unique identifier for the nudge
-  "event_id": "string",          // Identifier for the related event or article
-  "title": "string",              // Title of the nudge
-  "description": "string",        // Description of the nudge
-  "image_url": "string",          // URL of the uploaded cover image
-  "scheduled_time": "datetime",   // Time when the nudge is scheduled to be sent
-  "icon": "string",               // Icon to represent the nudge
-  "invitation_text": "string",    // One line invitation text
-  "created_at": "datetime",       // Timestamp of when the nudge was created
-  "updated_at": "datetime"        // Timestamp of the last update
+  "id": "string",               
+  "event_id": "string",         
+  "title": "string",             
+  "description": "string",      
+  "image_url": "string",        
+  "scheduled_time": "datetime",   
+  "icon": "string",             
+  "invitation_text": "string",  
+  "created_at": "datetime",     
+  "updated_at": "datetime"      
 }
 ```
 
@@ -58,6 +58,8 @@ https://api.example.com/v1
 ```
 
 **Response:**
+
+```
 
 ```json
 {

@@ -86,7 +86,6 @@ https://api.example.com/v1
     "created_at": "datetime",
     "updated_at": "datetime"
   },
-  ...
 ]
 ```
 

@@ -182,12 +182,3 @@ https://api.example.com/v1
 **Description:** This endpoint allows users to delete a specific nudge identified by its ID.
 
 **Success Response:** Returns a success message confirming the deletion.
-
-## How to Use
-
-1. Copy the entire Markdown code from the code block above.
-2. Create a new file named `README.md` in your project directory.
-3. Paste the code into the `README.md` file.
-4. Save the file.
-
-Now you have a complete and well-structured README for your Nudge API project in a single format!

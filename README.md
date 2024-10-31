@@ -4,44 +4,17 @@
 
 This is an Express-based API for managing events. It allows users to create, read, update, and delete events. The API supports image uploads for event cover images.
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Testing with Postman](#testing-with-postman)
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js (version 14 or later)
-- MongoDB (installed locally or accessible via a MongoDB Atlas cluster)
-- Postman (for testing the API)
-
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/akashchoudhary436/crud-api-nodejs.git
+   cd crud-api-nodejs
    ```
 2. Install the dependencies:
    ```bash
    npm install
    ```
-
-## Environment Variables
-
-Create a .env file in the root directory of your project and add the following environment variable:
-
-```plaintext
-MONGO_URI=<your_mongodb_connection_string>
-```
-
-Replace `<your_mongodb_connection_string>` with your actual MongoDB connection string.
 
 ## Running the Application
 
@@ -51,17 +24,17 @@ Start the server:
 npm start
 ```
 
-The server will be running on http://localhost:3000 (or the port specified in your .env file).
+The server will be running on http://localhost:3000.
 
 ## API Endpoints
 
 1. Get Events
    - Endpoint: GET /api/v3/app/events
    - Query Parameters:
-     - `id` (optional): Event ID to retrieve a specific event.
-     - `type` (optional): Type of events to retrieve (e.g., latest).
-     - `limit` (optional): Number of events to retrieve per page (default: 5).
-     - `page` (optional): Page number for pagination (default: 1).
+     - `id` : Event ID to retrieve a specific event.
+     - `type` : Type of events to retrieve (e.g., latest).
+     - `limit` : Number of events to retrieve per page (default: 5).
+     - `page` : Page number for pagination (default: 1).
    - Example Request:
      ```plaintext
      GET /api/v3/app/events?id=<event_id>
@@ -111,7 +84,6 @@ The server will be running on http://localhost:3000 (or the port specified in yo
 2. To Get Events:
    - Set the request method to GET.
    - Enter the URL: http://localhost:3000/api/v3/app/events.
-   - (Optional) Add query parameters in the Params tab.
 
 3. To Create an Event:
    - Set the request method to POST.
